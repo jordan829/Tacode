@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InflateParams">
+        <ignore path="src/cse110/activities/UserTransfer.java" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/cse110/activities/UserHome.java" />
+    </issue>
+</lint>

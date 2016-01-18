@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<color name="mintcream">#F5FFFA</color>
+	
+	<!--  the theme applied to the application or activity  -->
+	<style name="Tacode.ActionBar" parent="@android:style/Theme.Holo.Light">
+		<item name="android:actionBarStyle">@style/TacodeActionBar</item>
+		<item name="android:windowBackground">@color/mintcream</item>
+	</style>
+	
+	<!--  ActionBar styles  -->
+	<style name="TacodeActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+		<item name="android:background">#146666</item>
+		<item name="android:titleTextStyle">@style/Tacode.ActionBar.TitleTextColor</item>
+	</style>
+	
+	<!--  No Action Bar  -->
+	<style name="TacodeNoActionBar" parent="@android:style/Theme.Light.NoTitleBar">
+		<item name="android:windowBackground">@color/mintcream</item>
+	</style>
+	
+	<style name="Tacode.ActionBar.TitleTextColor" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/mintcream</item>
+    </style>
+
+</resources>
+

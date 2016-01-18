@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cse110.tacode"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- specify testing packages -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="cse110.tacode.test"
+        android:targetPackage="cse110.tacode" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/Tacode.ActionBar" >
+        <activity
+            android:name="cse110.activities.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@style/TacodeNoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cse110.activities.UserAccountCreate"
+            android:label="@string/title_activity_user_account_create"
+            android:theme="@style/TacodeNoActionBar" >
+        </activity>
+        <activity
+            android:name="cse110.activities.UserHome"
+            android:label="@string/title_activity_user_home" >
+        </activity>
+        <activity
+            android:name="cse110.activities.UserAccount"
+            android:label="@string/title_activity_user_account" >
+        </activity>
+        <!-- specify test runner -->
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="cse110.activities.UserTransfer"
+            android:label="@string/title_activity_user_transfer" >
+        </activity>
+        <activity
+            android:name="cse110.activities.UserAccountList"
+            android:label="@string/title_activity_user_account_list" >
+        </activity>
+        <activity
+            android:name="cse110.activities.UserAccountSettings"
+            android:label="@string/title_activity_user_account_settings">
+        </activity>
+    </application>
+
+</manifest>

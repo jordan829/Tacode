@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" >
+    
+    <FrameLayout android:id='@+id/bannerView'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_marginBottom="10dp" >
+        
+    	<TextView android:id="@+id/activity_user_account_name_banner"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:background="@drawable/accfunction_button_default" />
+
+	    <TextView
+	        android:id="@+id/activity_user_account_name_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fontFamily="sans-serif"
+	        android:foreground="@id/activity_user_account_name_banner"
+	        android:gravity="center"
+	        android:text="@string/title_activity_user_account_settings"
+	        android:textColor="#FFFFFF"
+	        android:textSize="24sp" />
+    
+    </FrameLayout>
+    
+    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/custom_button"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/user_settings_open_bank_account" 
+	        style="?android:attr/borderlessButtonStyle"
+	        android:onClick="openBankAccount" />
+    
+    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/custom_button"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/user_settings_close_bank_account" 
+	        style="?android:attr/borderlessButtonStyle"
+	        android:onClick="closeBankAccount" />
+    
+    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/custom_button"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/user_settings_close_main_account" 
+	        style="?android:attr/borderlessButtonStyle"
+	        android:onClick="closeMainAccount" />
+   
+</LinearLayout>

@@ -1,0 +1,136 @@
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <!-- Focusable and FocusableInTouchMode stop the first text box from auto-focusing -->
+	<LinearLayout android:id="@+id/user_create_account_root_layout"
+		android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="60dp"
+	    android:layout_marginRight="60dp"
+    	android:gravity="center" 
+	    android:orientation="vertical" 
+	    android:focusable="true" 
+	    android:focusableInTouchMode="true" >
+	    
+	    <ImageView android:id="@+id/logo_image"
+	        android:contentDescription="@string/desc"
+	   		android:src="@drawable/logo"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content" />
+	    
+	    <TextView android:id="@+id/user_create_account_title"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="5dp"
+		    android:gravity="center"
+		    android:fontFamily="sans-serif"
+		    android:textSize="20sp"
+		    android:text="@string/user_create_account_title"/>
+	    
+		<!-- Input Boxes: Name -->
+	    <EditText android:id="@+id/user_create_account_text_firstName_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_firstName_hint" 
+	        android:inputType="textPersonName"
+	        android:tag="firstName" />
+	    
+	    <EditText android:id="@+id/user_create_account_text_lastName_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_lastName_hint" 
+	        android:inputType="textPersonName" 
+	        android:tag="lastName" />
+	    
+	    <!-- Input Boxes: Address -->
+	    <EditText android:id="@+id/user_create_account_text_streetAddress_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="30dp"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_streetAddress_hint" 
+	        android:inputType="textPostalAddress" />
+	    
+	    <EditText android:id="@+id/user_create_account_text_city_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_city_hint" 
+	        android:inputType="textPersonName" />
+	   
+	    <EditText android:id="@+id/user_create_account_text_state_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_state_hint" 
+	        android:inputType="textPersonName" />
+	    
+	    <EditText android:id="@+id/user_create_account_text_zipCode_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_zipCode_hint"
+	        android:inputType="number" />
+	    
+	    <EditText android:id="@+id/user_create_account_text_socialSecurityNumber_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:layout_marginTop="30dp"
+	        android:hint="@string/user_create_account_text_socialSecurityNumber_hint" 
+	        android:inputType="phone"/>
+	    
+	    <EditText android:id="@+id/user_create_account_text_email_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_email_hint" 
+	        android:inputType="textEmailAddress" />
+	    
+	    <EditText android:id="@+id/user_create_account_text_createUsername_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:hint="@string/user_create_account_text_createUsername_hint" 
+	        android:inputType="text" />
+	    
+	    <EditText android:id="@+id/user_create_account_text_createPassword_field"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:imeOptions="flagNoExtractUi"
+	        android:fontFamily="sans-serif"
+	        android:hint="@string/user_create_account_text_createPassword_hint"
+	        android:inputType="textPassword" />
+	    
+	    <!-- Buttons -->
+	
+	    <Button 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="30dp"
+	        android:background="@drawable/custom_button"
+        	android:textColor="#FFFFFF"
+	        android:text="@string/user_create_account_button_submitUserAccount"
+	        android:onClick="user_create_account_submitUserAccount" />
+	    
+	</LinearLayout>
+</ScrollView>
+
+
